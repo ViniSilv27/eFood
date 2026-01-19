@@ -11,10 +11,11 @@ type Props = {
   nome: string
   descricao: string
   imagem: string
+  onClick?: () => void
 }
 
-const Product = ({ nome, descricao, imagem }: Props) => (
-  <CardProduto>
+const Product = ({ nome, descricao, imagem, onClick }: Props) => (
+  <CardProduto onClick={onClick}>
     <ImagemProduto src={imagem} alt="Produto" />
     <TituloProduto>{nome}</TituloProduto>
     <DescricaoProduto>{descricao}</DescricaoProduto>

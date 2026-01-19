@@ -9,7 +9,9 @@ export const CardProduto = styled.div`
   font-weight: bold;
 `
 export const ImagemProduto = styled.img`
-  width: 100%;
+  width: 304px;
+  height: 168px;
+  object-fit: cover;
 `
 export const TituloProduto = styled.h2`
   font-size: 18px;
@@ -28,4 +30,5 @@ export const Botaoproduto = styled.button`
   color: ${Cores.rosa};
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 `

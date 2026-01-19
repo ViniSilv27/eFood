@@ -15,24 +15,26 @@ import { Link } from 'react-router-dom'
 type Props = {
   nome: string
   imagem: string
-  infos: string[]
+  tipo: string
+  destaque: boolean
   nota: number
   descricao: string
-  pagina: string
+  id: number
 }
+
 const Restaurant = ({
   nome,
   imagem,
-  infos,
+  tipo,
+  destaque,
   nota,
   descricao,
-  pagina
+  id
 }: Props) => (
   <Card>
     <Infos>
-      {infos.map((info) => (
-        <Info key={info}>{info}</Info>
-      ))}
+      <Info>{tipo}</Info>
+      {destaque && <Info>Destaque</Info>}
     </Infos>
     <Imagem src={imagem} alt="Sushi Restaurante" />
     <CardConteudo>
@@ -44,7 +46,7 @@ const Restaurant = ({
         </div>
       </TituloNota>
       <Descricao>{descricao}</Descricao>
-      <Link to={pagina}>
+      <Link to={`/restaurante/${id}`}>
         <Botao>Saiba mais</Botao>
       </Link>
     </CardConteudo>

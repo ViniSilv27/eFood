@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import fundoBanner from '../../assents/images/LaDolceItaliana.png'
 import { Cores } from '../../styles'
 import { Props } from '.'
 
@@ -18,6 +17,7 @@ export const Tipo = styled.h1`
   padding: 24px 0 160px; 172;
   font-weight: 100;
   font-style: thin;
+  font-size: 32px;
 `
 
 export const Nome = styled.h2`
