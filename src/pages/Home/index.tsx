@@ -1,9 +1,5 @@
 import Header from '../../components/Header'
 import RestaurantList from '../../components/RestaurantList'
-import Restaurante from '../../models/Restaurante'
-import sushiRestaurante from '../../assents/images/sushirestaurante.png'
-import LaDulceItaliana from '../../assents/images/LaDolceItaliana.png'
-import Footer from '../../components/Footer'
 import { useEffect, useState } from 'react'
 
 export type Produto = {

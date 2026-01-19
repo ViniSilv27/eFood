@@ -1,4 +1,3 @@
-import pizza from '../../assents/images/pizza.png'
 import {
   Botaoproduto,
   CardProduto,
