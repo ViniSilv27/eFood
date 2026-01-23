@@ -29,7 +29,10 @@ const Home = () => {
     fetch('https://api-ebac.vercel.app/api/efood/restaurantes')
       .then((res) => res.json())
       .then((data: Restaurantes[]) => {
-        return setRestaurantes(data)
+        setRestaurantes(data)
+      })
+      .catch((error) => {
+        console.error('Erro ao buscar restaurantes:', error)
       })
   })
   return (
